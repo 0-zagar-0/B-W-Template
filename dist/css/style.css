@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* !* ======================================
+?              <МИКСИНЫ>                
+*========================================= */
+/* !*=======================================
+?              </МИКСИНЫ>                
+*========================================= */
+/* !*=======================================
+?              <Шрифты>                  
+*========================================= */
+/*!todo<Подключаем шрифты>=======================================================================================*/@font-face{font-family:"Helvetica Neue LT Pro - Lt";src:url("../fonts/HelveticaNeueLTPro-Lt.eot");src:local("☺"),url("../fonts/HelveticaNeueLTPro-Lt.woff") format("woff"),url("../fonts/HelveticaNeueLTPro-Lt.ttf") format("truetype"),url("../fonts/HelveticaNeueLTPro-Lt.svg") format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Helvetica Neue LT Pro - Md";src:url("../fonts/HelveticaNeueLTPro-Md.eot");src:local("☺"),url("../fonts/HelveticaNeueLTPro-Md.woff") format("woff"),url("../fonts/HelveticaNeueLTPro-Md.ttf") format("truetype"),url("../fonts/HelveticaNeueLTPro-Md.svg") format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Helvetica Neue LT Pro - Roman";src:url("../fonts/HelveticaNeueLTPro-Roman.eot");src:local("☺"),url("../fonts/HelveticaNeueLTPro-Roman.woff") format("woff"),url("../fonts/HelveticaNeueLTPro-Roman.ttf") format("truetype"),url("../fonts/HelveticaNeueLTPro-Roman.svg") format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Merriweather - Light Italic";src:url("../fonts/Merriweather-Light.eot");src:local("☺"),url("../fonts/Merriweather-Light.woff") format("woff"),url("../fonts/Merriweather-Light.ttf") format("truetype"),url("../fonts/Merriweather-Light.svg") format("svg");font-weight:400;font-style:normal}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-Light.eot");src:local("☺"),url("../fonts/Montserrat-Light.woff") format("woff"),url("../fonts/Montserrat-Light.ttf") format("truetype"),url("../fonts/Montserrat-Light.svg") format("svg");font-weight:300;font-style:normal}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-Regular.eot");src:local("☺"),url("../fonts/Montserrat-Regular.woff") format("woff"),url("../fonts/Montserrat-Regular.ttf") format("truetype"),url("../fonts/Montserrat-Regular.svg") format("svg");font-weight:400;font-style:normal}@font-face{font-family:Roboto;src:url("../fonts/Roboto-Regular.eot");src:local("☺"),url("../fonts/Roboto-Regular.woff") format("woff"),url("../fonts/Roboto-Regular.ttf") format("truetype"),url("../fonts/Roboto-Regular.svg") format("svg");font-weight:400;font-style:normal}
+/*!todo</Подключаем шрифты>=======================================================================================*/
+/*!todo<Иконочные шрифты>==========================================================================================*/
+/*!todo</Иконочные шрифты>==========================================================================================*/
+/*!todo<Шрифт по умолчанию>==========================================================================================*/
+/*!todo</Шрифт по умолчанию>==========================================================================================*/
+/* !*=======================================
+?              </Шрифты>                  
+*========================================= */
+/* !*=======================================
+?              <ПЕРЕМЕННЫЕ>              
+*========================================= */
+/* !*=======================================
+?              </ПЕРЕМЕННЫЕ>              
+*========================================= */
+/* !*=======================================
+?       <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>      
+*========================================= */
+/* !=======================================
+?              Обнуление                  
+!========================================= */*{padding:0;margin:0;border:0}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}:active,:focus{outline:none}a:active,a:focus{outline:none}aside,footer,header,nav{display:block}body,html{width:100%;height:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}button,input,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}a:hover{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{margin:0;font-size:inherit;font-weight:400}p{margin:0;font-size:inherit;font-weight:400}
+
+/* !=======================================
+?              /Обнуление                  
+!========================================= */body{color:#000000;font-size:14px;font-family:"sans-serif"}body.lock{overflow:hidden}
+
+/* !*=======================================
+?     </ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>       
+*========================================= */
+/* !*=======================================
+?              <ОБОЛОЧКА>                
+*========================================= */.wrapper{width:100%;min-height:100%;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+
+/* !*=======================================
+?              </ОБОЛОЧКА>                
+*========================================= */
+/* !*=======================================
+?              <ОСНОВНАЯ СЕТКА>          
+*========================================= */.container{max-width:1170px;margin:0 auto;width:100%}@media (max-width:1185px){.container{max-width:970px}}@media (max-width:991.98px){.container{max-width:750px}}@media (max-width:767.98px){.container{max-width:460px}}@media (max-width:479.98px){.container{max-width:none;padding:0 10px}}
+/* !*=======================================
+            ? </ОСНОВНАЯ СЕТКА>         
+*========================================= */
+/*!todo<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>======================================================================*/
+/*!todo</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>=====================================================================*/
+/*!todo<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=============================================================================*/
+/*!todo</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>============================================================================*/
+/* !*=======================================
+?              <ОСНОВНОЙ БЛОК>            
+*========================================= */
+/* !todo==================================================================================================================*/
+/* !todo==================================================================================================================*/
+/* !*=======================================
+?              </ОСНОВНОЙ БЛОК>           
+*========================================= */
