@@ -1,0 +1,145 @@
+.team {
+   &__content {
+      padding: 76px 0px 0px 0px;
+      text-align: center;
+   }
+
+   &__title {
+      margin: 0px 0px 2px 0px;
+      color: #1d1e1f;
+      font-family: "Helvetica Neue LT Pro - Lt";
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.68px;
+   }
+
+   &__description {
+      margin: 0px 0px 119px 0px;
+      color: #898888;
+      font-family: "Merriweather - Light Italic";
+      font-size: 16px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 26px;
+      letter-spacing: 0.32px;
+   }
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(auto, 70px));
+      grid-column-gap: 30px;
+      justify-content: center;
+      min-height: 368px;
+      @media (max-width: 800px) {
+         grid-template-rows: repeat(3, minmax(auto, 278px));
+         grid-row-gap: 40px;
+         grid-column-gap: 0px;
+      }
+   }
+
+   &__item {
+      &_m {
+         grid-column: 2 / 4;
+         align-self: end;
+         @media (max-width: 800px) {
+            & h2 {
+               min-width: 170px;
+            }
+            grid-row: 2 / 3;
+            grid-column: 6 / 8;
+         }
+         & p {
+            min-width: 200px;
+            margin: 0px 0px 0px -14px;
+         }
+      }
+
+      &_j {
+         grid-column: 6 / 8;
+         @media (max-width: 800px) {
+            & h2 {
+               min-width: 170px;
+            }
+         }
+      }
+
+      &_a {
+         grid-column: 10 / 12;
+         align-self: end;
+         @media (max-width: 800px) {
+            grid-row: 3 / 4;
+            grid-column: 6 / 8;
+            & h2 {
+               min-width: 170px;
+            }
+            & p {
+               min-width: 200px;
+            }
+         }
+      }
+   }
+}
+.item {
+   &__image {
+      position: relative;
+      min-width: 170px;
+      min-height: 170px;
+      margin: 0px 0px 28px 0px;
+      & img {
+         @include bgi;
+      }
+   }
+
+   &__name {
+      color: #464646;
+      font-family: "Helvetica Neue LT Pro - Roman";
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.48px;
+   }
+
+   &__description {
+      color: #b3b3b3;
+      font-family: "Helvetica Neue LT Pro - Roman";
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.26px;
+   }
+
+   &__links {
+      padding: 15px 0px 0px 0px;
+   }
+
+   &__link {
+      &_tw {
+         margin: 0px 14px 0px 0px;
+
+         & path {
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+         }
+         &:hover path {
+            fill: #000;
+         }
+      }
+
+      &_inst {
+         & path {
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+         }
+         &:hover path {
+            fill: #000;
+         }
+      }
+   }
+}
