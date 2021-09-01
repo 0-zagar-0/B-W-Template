@@ -65,7 +65,7 @@ body {
 /* !*=======================================
 ?              <ОБОЛОЧКА>                
 *========================================= */
-.wrapper {
+/* .wrapper {
    width: 100%;
    min-height: 100%;
    overflow: hidden;
@@ -76,17 +76,17 @@ body {
    -webkit-box-direction: normal;
    -ms-flex-direction: column;
    flex-direction: column;
-}
+} */
 
-//.wrapper {
-//   display: grid;
-//   grid-template-areas:
-//      "header"
-//      "main"
-//      "footer";
-//   grid-template: /* header */ 100px /* main */ 1fr /* footer */ 100px / /* left */ 1fr /* container */ $maxwidth + px /* right */ 1fr;
-//   min-height: 100%;
-//}
+.wrapper {
+   display: grid;
+   grid-template: 100vh 100% 200px / 100%;
+   grid-template-areas:
+      "header"
+      "main"
+      "footer";
+   min-height: 100%;
+}
 /* !*=======================================
 ?              </ОБОЛОЧКА>                
 *========================================= */
@@ -95,10 +95,10 @@ body {
 *========================================= */
 .container {
    max-width: $maxWidthContainer + px;
-   margin: 0 auto;
-   width: 100%;
+   /* margin: 0 auto; */
+   /* width: 100%; */
 }
-@media (max-width: $md1 + px) {
+/* @media (max-width: $md1 + px) {
    .container {
       max-width: 970px;
    }
@@ -118,7 +118,7 @@ body {
       max-width: none;
       padding: 0 10px;
    }
-}
+} */
 /* !*=======================================
             ? </ОСНОВНАЯ СЕТКА>         
 *========================================= */

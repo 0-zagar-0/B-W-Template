@@ -1,0 +1,151 @@
+.about {
+   background-color: #1d1d1d;
+   &__content {
+   }
+
+   &__items {
+      display: grid;
+      grid-template-rows: 250px 121px 353px 359px;
+      grid-template-columns: repeat(12, minmax(auto, 70px));
+      grid-template-areas:
+         "i11 i11 i11 i11 i11 line line i12 i12 i12 i12 i12"
+         "i11 i11 i11 i11 i11 line line i12 i12 i12 i12 i12"
+         "i13 i13 i13 i13 i13 line line i14 i14 i14 i14 i14"
+         "i13 i13 i13 i13 i13 line line i14 i14 i14 i14 i14";
+      justify-content: center;
+      grid-column-gap: 30px;
+   }
+
+   &__item {
+      &_2011 {
+         position: relative;
+         padding: 0px 0px 0px 12px;
+         margin: 0px -30px 0px 0px;
+         align-self: end;
+         grid-area: i11;
+         grid-row: 1 / 2;
+         text-align: right;
+      }
+
+      &_2012 {
+         padding: 0px 12px 0px 0px;
+         margin: 0px 0px 0px -30px;
+         grid-area: i12;
+         grid-row: 2 / 3;
+      }
+
+      &_2013 {
+         padding: 0px 0px 0px 12px;
+         margin: 0px -30px 0px 0px;
+         grid-area: i13;
+         grid-row: 3 / 4;
+         align-self: center;
+         text-align: right;
+      }
+
+      &_2014 {
+         padding: 0px 12px 0px 0px;
+         margin: 0px 0px 0px -30px;
+         grid-area: i14;
+         grid-row: 4 / 5;
+      }
+
+      &_line {
+         grid-area: line;
+         justify-self: center;
+         width: 5px;
+         height: 1200px;
+         background-color: #fff;
+         z-index: 10;
+      }
+
+      &_circle {
+         grid-column: 6 / 8;
+         justify-self: center;
+         width: 24px;
+         height: 24px;
+         border: 5px solid #ffffff;
+         border-radius: 50%;
+         -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+         -ms-border-radius: 50%;
+         -o-border-radius: 50%;
+         background-color: #1d1d1d;
+         z-index: 12;
+      }
+
+      &_circle-11 {
+         grid-row: 1;
+         align-self: center;
+         position: relative;
+         bottom: -30px;
+      }
+
+      &_circle-12 {
+         grid-row: 2;
+         align-self: start;
+      }
+
+      &_circle-13 {
+         grid-row: 3;
+         align-self: center;
+         position: relative;
+         top: -40px;
+         width: 46px;
+         height: 46px;
+      }
+
+      &_circle-14 {
+         grid-row: 4;
+         align-self: start;
+      }
+   }
+
+   &__img {
+      position: relative;
+      &_black {
+         position: absolute;
+         bottom: 28px;
+         width: 100%;
+         min-height: 236px;
+         & img {
+            @include bgi;
+         }
+      }
+
+      &_white {
+         position: relative;
+         max-width: 100%;
+         min-height: 236px;
+         & img {
+            @include bgi;
+         }
+      }
+   }
+}
+.item {
+   &__title {
+      margin-bottom: 23px;
+      color: #fefefe;
+      font-family: "Helvetica Neue LT Pro - Roman";
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 0.96px;
+      @media (max-width: 500px) {
+         font-size: 30px;
+      }
+   }
+
+   &__sometext {
+      color: #b7b7b7;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0.3px;
+      @media (max-width: 500px) {
+         font-size: 12px;
+      }
+   }
+}
