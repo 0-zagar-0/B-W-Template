@@ -15,6 +15,14 @@
          "i13 i13 i13 i13 i13 line line i14 i14 i14 i14 i14";
       justify-content: center;
       grid-column-gap: 30px;
+      @media (max-width: 400px) {
+         grid-template-rows: 150px 121px 250px 150px;
+         grid-template-areas:
+            "i11 i11 i11 i11 i11 i11 i11 i11 i11 line line line"
+            "i12 i12 i12 i12 i12 i12 i12 i12 i12 line line line"
+            "i13 i13 i13 i13 i13 i13 i13 i13 i13 line line line"
+            "i14 i14 i14 i14 i14 i14 i14 i14 i14 line line line";
+      }
    }
 
    &__item {
@@ -23,6 +31,7 @@
       }
 
       &_2011 {
+         width: 100%;
          position: relative;
          padding: 0px 0px 0px 12px;
          margin: 0px -30px 0px 0px;
@@ -30,6 +39,9 @@
          grid-area: i11;
          grid-row: 1 / 2;
          text-align: right;
+         @media (max-width: 400px) {
+            padding: 0;
+         }
       }
 
       &_2012 {
@@ -37,6 +49,11 @@
          margin: 0px 0px 0px -30px;
          grid-area: i12;
          grid-row: 2 / 3;
+         @media (max-width: 400px) {
+            padding: 0px 0px 0px 12px;
+            text-align: right;
+            align-self: center;
+         }
       }
 
       &_2013 {
@@ -46,6 +63,9 @@
          grid-row: 3 / 4;
          align-self: center;
          text-align: right;
+         @media (max-width: 400px) {
+            margin: 0;
+         }
       }
 
       &_2014 {
@@ -53,6 +73,10 @@
          margin: 0px 0px 0px -30px;
          grid-area: i14;
          grid-row: 4 / 5;
+         @media (max-width: 400px) {
+            padding: 0px 0px 0px 12px;
+            text-align: right;
+         }
       }
 
       &_line {
@@ -77,6 +101,9 @@
          -o-border-radius: 50%;
          background-color: #1d1d1d;
          z-index: 12;
+         @media (max-width: 400px) {
+            grid-column: 10 / 13;
+         }
       }
 
       &_circle-11 {
@@ -84,6 +111,9 @@
          align-self: center;
          position: relative;
          bottom: -30px;
+         @media (max-width: 400px) {
+            align-self: start;
+         }
       }
 
       &_circle-12 {

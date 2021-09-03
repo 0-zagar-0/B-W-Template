@@ -1,0 +1,144 @@
+.contact {
+   padding: 175px 0px 80px 0px;
+   @media (max-width: 750px) {
+      padding: 85px 0px 40px 0px;
+   }
+
+   &__title {
+      margin: 0px 0px 3px 0px;
+      color: #1d1e1f;
+      font-family: "Helvetica Neue LT Pro - Lt";
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 44px;
+      letter-spacing: 0.68px;
+      grid-area: t;
+      grid-column: 2 / 12;
+      justify-self: center;
+   }
+
+   &__description {
+      margin: 0px 0px 61px 0px;
+      color: #898888;
+      font-family: "Merriweather - Light Italic";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.32px;
+      grid-area: d;
+      grid-column: 2 / 12;
+      justify-self: center;
+   }
+
+   &__connection {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 0 58px;
+      margin: 0px 0px 153px 0px;
+      color: #898888;
+      font-family: "Helvetica Neue LT Pro - Lt";
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 0.24px;
+      grid-area: c;
+      grid-column: 4 / 10;
+      & img {
+         margin: 0px 0px 12px 0px;
+      }
+      @media (max-width: 750px) {
+         padding: 0 0 0 0px;
+         margin: 0px 0px 50px 0px;
+         flex-direction: column;
+      }
+   }
+
+   &__form {
+      grid-area: f;
+      grid-column: 3 / 11;
+      display: flex;
+      flex-direction: column;
+   }
+}
+.content {
+   display: grid;
+   grid-template: repeat(4, auto) / repeat(12, minmax(auto, 70px));
+   grid-column-gap: 30px;
+   grid-template-areas:
+      "t t t t t t t t t t t t"
+      "d d d d d d d d d d d d"
+      "c c c c c c c c c c c c"
+      "f f f f f f f f f f f f";
+   justify-content: center;
+}
+.connection {
+   &__item {
+      @media (max-width: 750px) {
+         margin: 0px 0px 30px 0px;
+      }
+   }
+
+   &__description {
+      text-decoration: none;
+      color: #898888;
+      &:hover {
+         color: #000000;
+      }
+   }
+}
+.form {
+   &__inp {
+      width: 100%;
+      padding: 20px 15px;
+      margin: 0px 0px 20px 0px;
+      border: 1px solid #999999;
+
+      &::placeholder {
+         color: #898888;
+         font-family: "Helvetica Neue LT Pro - Lt";
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 26px;
+         letter-spacing: 0.3px;
+         text-align: center;
+      }
+   }
+
+   &__textarea {
+      width: 100%;
+      min-height: 195px;
+      margin: 0px 0px 20px 0px;
+      padding: 20px;
+      border: 1px solid #999999;
+      &::placeholder {
+         padding: 22px;
+         color: #898888;
+         font-family: "Helvetica Neue LT Pro - Lt";
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 26px;
+         letter-spacing: 0.3px;
+      }
+   }
+
+   &__btn {
+      padding: 20px 0;
+      color: #fefefe;
+      font-family: "Helvetica Neue LT Pro - Md";
+      font-size: 17px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 0.34px;
+      border: 1px solid #161616;
+      background-color: #161616;
+      &:hover {
+         color: #161616;
+         background-color: rgba(255, 255, 255, 0);
+      }
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+   }
+}

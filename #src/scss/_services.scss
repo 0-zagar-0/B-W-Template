@@ -1,0 +1,169 @@
+.services {
+   background: url("../img/srvices/bg.png") top left / cover no-repeat;
+   &__content {
+      position: relative;
+      padding: 244px 0px 100px 0px;
+   }
+
+   &__title {
+      margin: 0px 0px 12px 0px;
+      color: #ffffff;
+      font-family: "Helvetica Neue LT Pro - Lt";
+      font-size: 34px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 44px;
+      text-align: center;
+      letter-spacing: 0.68px;
+   }
+
+   &__description {
+      margin: 0px 0px 213px 0px;
+      color: #777777;
+      font-family: "Merriweather - Light Italic";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: center;
+      /* Text style for "Maybe not" */
+      font-style: normal;
+      letter-spacing: 0.32px;
+      line-height: normal;
+      @media (max-width: 950px) {
+         margin: 0px 0px 100px 0px;
+      }
+   }
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(auto, 70px));
+      grid-column-gap: 30px;
+      justify-content: center;
+      @media (max-width: 950px) {
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-row-gap: 30px;
+      }
+   }
+
+   &__item {
+      text-align: center;
+      &_graph {
+         grid-column: 1 / 5;
+         @media (max-width: 950px) {
+            grid-column: 5 / 9;
+            grid-row: 1 / 2;
+         }
+      }
+
+      &_heart {
+         grid-column: 5 / 9;
+         @media (max-width: 950px) {
+            grid-column: 5 / 9;
+            grid-row: 2 / 3;
+         }
+      }
+
+      &_cloud {
+         grid-column: 9 / 12;
+         @media (max-width: 950px) {
+            grid-column: 5 / 9;
+            grid-row: 3 / 4;
+         }
+      }
+
+      &_image {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 172px;
+         height: 172px;
+         margin: 0px auto 43px auto;
+         border: 6px solid #ffffff;
+         border-radius: 50%;
+         -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+         -ms-border-radius: 50%;
+         -o-border-radius: 50%;
+      }
+
+      &_name {
+         margin: 0px 0px 29px 0px;
+         color: #ffffff;
+         font-family: "Helvetica Neue LT Pro - Lt";
+         font-size: 26px;
+         font-weight: 400;
+         line-height: 26px;
+         letter-spacing: 0.52px;
+      }
+
+      &_description {
+         color: #383838;
+         font-family: "Helvetica Neue LT Pro - Lt";
+         font-size: 18px;
+         font-weight: 400;
+         line-height: 23px;
+         letter-spacing: 0.36px;
+      }
+   }
+
+   &__blog {
+   }
+}
+.blog {
+   max-height: 835px;
+   overflow: hidden;
+   &__image {
+      max-height: 650px;
+      display: block;
+      overflow: hidden;
+      text-align: center;
+      transform: rotate(-5deg);
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      & img {
+         width: 100%;
+         transform: rotate(5deg);
+         -webkit-transform: rotate(5deg);
+         -moz-transform: rotate(5deg);
+         -ms-transform: rotate(5deg);
+         -o-transform: rotate(5deg);
+      }
+   }
+
+   &__btn {
+      position: absolute;
+      bottom: 295px;
+      left: 50%;
+      padding: 26px 43px;
+      color: #000000;
+      font-family: "Helvetica Neue LT Pro - Md";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 0.32px;
+      background-color: #ffffff;
+      z-index: 50;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      &:hover {
+         background-color: #00000000;
+         color: #ffffff;
+      }
+      @media (max-width: 950px) {
+         padding: 10px 10px;
+      }
+      border: 1px solid #ffffff;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+   }
+}
